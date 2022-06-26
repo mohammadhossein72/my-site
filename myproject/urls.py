@@ -21,6 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('url address', 'view')
 
-    path('raf-add/',include('webapp.urls'))
+    path('webapp/',include('webapp.urls'))
 
 ]

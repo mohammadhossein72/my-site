@@ -4,5 +4,8 @@ from django.shortcuts import render
 
 from django.http import HttpResponse
 
-def raf_func(request):
+def raf_func_one(request):
     return HttpResponse('Hello')
+
+def raf_func_two(request):
+    return HttpResponse('Bye')
