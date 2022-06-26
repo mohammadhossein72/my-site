@@ -14,13 +14,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path , include
 
-from myproject.manual_views import raf_func
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('url address', 'view')
-    path('raf-add',raf_func)
+
+    path('raf-add/',include('webapp.urls'))
 
 ]
