@@ -16,6 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from myproject.manual_views import raf_func
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # path('url address', 'view')
+    path('raf-add',raf_func)
+
 ]
